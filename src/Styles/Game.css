@@ -1,0 +1,53 @@
+.progress{
+    margin-left:7px ;
+    width: 340px;
+    background-color: rgb(160, 159, 159);
+    border-radius: 20px;
+}
+.progressbar{
+    height: 6px;
+    background: conic-gradient(rgb(97, 246, 97), rgb(228, 228, 27), rgb(117, 236, 101));
+    border-radius: 20px;
+}
+h2{
+    color:beige
+}
+li{
+    width: 250px;
+    background-color:#6F5ADC;
+    list-style: none;
+    color: #ffffff;
+    border:1px solid rgb(221, 218, 218);
+    border-radius: 20px;
+    margin: 2px;
+    padding: 10px;
+    cursor: pointer;
+}
+li:hover{
+    background: #556FF7;
+    color: rgb(246, 232, 232);
+}
+ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+}
+.containerForTimer{
+    display: flex;
+    justify-content: center;
+}
+.Timer{ 
+    width: 100px;
+    height: 100px;
+    background-color: #6F5ADC;
+    border: 6px solid #7b65ed;
+    border-radius: 50%;
+    box-shadow: -8px -8px 12px rgba(67, 67, 67, 0.4),
+    inset 8px 8px 12px rgba(0, 0, 0, 0.3),
+    inset -8px -8px 12px rgba(67, 67, 67, 0.4),
+    8px 8px 12px rgba(0, 0, 0, 0.3); 
+    display: flex;
+    align-items: center;
+    color: rgba(220, 190, 229, 0.838);
+}

@@ -1,0 +1,51 @@
+.result{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+button{
+    font-family: Arial, Helvetica, sans-serif;
+    border: none;
+    border-radius: 10px;
+    color: rgb(5, 8, 5);
+    background-color: rgb(222, 26, 26);
+}
+.RapitBtn{
+    width: 60px;
+    height: 20px;
+    background: linear-gradient(rgb(9, 244, 60), rgb(105, 104, 104)) ;
+    color: black;
+    letter-spacing: 1px;
+    transition: .15s ease-in;
+}
+.RapitBtn:hover{
+    letter-spacing: 0px;
+}
+p{
+    font-weight: 450;
+    color: #ffffff;
+    letter-spacing: 2px;
+}
+h1{
+    color:#ffffff;
+    text-decoration: underline solid rgb(214, 5, 225);
+}
+p span{
+   color:aqua;
+
+}
+.forAnswears{
+    background-color: #1D1D42;
+    border-radius: 10px;
+    padding: 5px;
+    margin-top: 3px;
+}
+.red{
+ color:red;
+}
+.yellow{
+    color:yellow;
+}
+.green{
+    color:green;
+}
