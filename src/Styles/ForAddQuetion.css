@@ -1,8 +1,15 @@
 .InputsForQuestion{
+    width: 40%;
     display: flex;
     flex-direction: column;
-    align-items: center
-    
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #0A0D14;
+    border-radius: 20px;
+    box-shadow: 0 2px 3px 3px rgb(145, 145, 148), 
+                0 7px 4px 2px rgb(57, 56, 56) ;
+    padding: 10px;
 }
 button{
     width: 15px;
@@ -11,25 +18,23 @@ button{
     background-color: rgb(150, 182, 186);
 }
 .startBtn{
-    width: 50px;
-    height: 20px;
-    background: linear-gradient(rgb(9, 244, 60), rgb(105, 104, 104)) ;
+    width: 80%;
+    height: 30px;
+    box-shadow: 0 0 30px 30px #6FCF97 inset, 0 0 0 0 #4E2ECF;
     color: black;
     letter-spacing: 1px;
     transition: .15s ease-in;
 }
 .startBtn:hover{
-    letter-spacing: 0px;
+    letter-spacing: 5px;
 }
 .AddQuestionBtn{
-  /* text-decoration: none; */
-  width: 120px;
+  width: 80%;
   height: 30px;
-  /* display: inline-block; */
   padding: 5px 13px;
-  margin: 5px 5px;
+  margin: 15px 5px 10px 5px;
   border-radius: 10px;
-  box-shadow: 0 0 30px 30px #6FCF97 inset, 0 0 0 0 #4E2ECF;
+  background: linear-gradient(rgb(9, 244, 60), rgb(105, 104, 104)) ;
   font-family: 'Montserrat', sans-serif;
   font-weight:normal;
   letter-spacing: 2px;
@@ -37,24 +42,32 @@ button{
   transition: .30s ease-in;
 }
 .AddQuestionBtn:hover{
-  box-shadow: 0 0 10px 0 #66BD6D inset, 0 0 10px 4px #4E2ECF;
+  box-shadow: 0 0 10px 0 #66BD6D inset, 0 0 10px 4px #7856ff;
   color: #6F5ADC;
 }
 input{
-    width: 300px;
-    height: 50px;
+    width: 90%;
+    height: 40px;
     border:0.5px solid rgb(151, 35, 35);
-    border-radius: 10px 5px;
-    background-color:#6F5ADC;
+    border-radius: 5px;
+    background-color:#d0c6ff;
     margin: 3px;
     padding-left: 5px;
-    color:#ffffff;
-}
-input::placeholder{
-    color: #FFFFFF
-}
-#inputForSeconds, #inputForMinutes{
-     width: 145px !important;
-    
+    color:#000 !important;
 }
 
+@media screen and (max-width: 1024px) {
+    .InputsForQuestion {
+      width: 50%;
+    }
+}
+@media screen and (max-width: 920px) {
+    .InputsForQuestion {
+      width: 60%;
+    }
+}
+@media screen and (max-width: 720px) {
+    .InputsForQuestion {
+      width: 80%;
+    }
+}

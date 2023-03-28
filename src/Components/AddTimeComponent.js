@@ -17,13 +17,13 @@ export default function AddTimeComponent({StartFunc, addTimer}) {
     }
 
   return (
-    <div>
-        <h2>Set test time</h2>
+    <div className='container'>
+        <h2>Set Time</h2>
       <div className='forTimer'>  
         <input id='inputForMinutes' type={'number'} max='59' min='0' onChange={addMinutes} placeholder='Minutes:' value={minutes}/>
         <input id='inputForSeconds' type={'number'} max='59' min='0' onChange={addSeconds} placeholder='Seconds:' value={seconds}/>
       </div>
-      <button className='startBtn' onClick={start}>start</button>
+      <button className='startTimeBtn' onClick={start}>start</button>
     </div>
   )
 }

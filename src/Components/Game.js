@@ -12,7 +12,6 @@ export default function Game({ hours=0 , minutes=0 , seconds=0, step, timerStatu
     
     if(h==0 && m==0 && s==0){
       setTimerStatus(false)
-      // alert('Sorry, your time is out!')
       return ()=>clearInterval();
     }else {
         if (m === 0 && s === 0) {
@@ -29,12 +28,11 @@ export default function Game({ hours=0 , minutes=0 , seconds=0, step, timerStatu
 
   useEffect(() => {
     const timerID = setInterval(() => tick(), 1000);
-      
     return ()=>clearInterval(timerID)
   });
 
   return (
-  <div>
+  <div className='container-Game'>
     
     <div className='containerForTimer'>
       <h2 className='Timer'>

@@ -72,10 +72,10 @@ function App() {
 
   const [step, setStep] = useState(-2);
   const [timerStatus, setTimerStatus] = useState(true);
-  const quetion = quetions[step];
   const [correct, setCorrect] = useState(0);
   const [seconds, setSeconds] = useState(10);
   const [minutes, setMinutes] = useState(0);
+  const quetion = quetions[step];
 
   const FunctionForAddQuestion = ()=>{
     const inputTittle = document.querySelector('#inputTittle');
@@ -119,29 +119,35 @@ function App() {
   }
   
   return (
-
     <div className="App">
-      <header className='App-header'>
        {
         step == -2  
-          ?  <AddQuestion FunctionForAddQuestion={FunctionForAddQuestion}
-                          StartFunc = {StartFunc}/>
-          :  step==-1 ? <AddTimeComponent addTimer={addTimer}
-                                          StartFunc={StartFunc}/>
-          :  step !== quetions.length && timerStatus==true 
-             ? (<Game timerStatus={timerStatus}
+          ? <AddQuestion 
+              FunctionForAddQuestion={FunctionForAddQuestion}
+              StartFunc = {StartFunc}
+            />
+            : step == -1 
+              ? <AddTimeComponent 
+                  addTimer={addTimer}
+                  StartFunc={StartFunc}
+                />
+                : step !== quetions.length && timerStatus==true 
+                  ? <Game 
+                      timerStatus={timerStatus}
                       setTimerStatus={setTimerStatus} 
                       minutes={minutes} 
                       seconds={seconds} 
                       quetions={quetions} 
                       step={step} 
                       quetion={quetion} 
-                      onClickVariant={onClickVariant} />) 
-             : (<Result step={step} 
+                      onClickVariant={onClickVariant} 
+                    />
+                    : <Result 
+                        step={step} 
                         correct={correct}
-                        quetions={quetions}/>) 
+                        quetions={quetions}
+                      /> 
        }
-      </header>
     </div>
   );
 }
